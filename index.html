@@ -1,101 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rod Hermiz - Full Stack Developer</title>
-    <!-- Bootstrap 5 CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
-
 <body>
-
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container">
-            <a class="navbar-brand" href="#">Rod Hermiz</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Header Section -->
-    <header class="bg-dark text-light text-center py-5" style="background-image: url('your-background-image.jpg'); background-size: cover;">
-        <div class="container">
-            <h1 class="display-4">Rod Hermiz</h1>
-            <p class="lead">Full Stack Developer | Software Consultant | Tech Enthusiast</p>
-        </div>
+    <!-- Header -->
+    <header class="bg-dark text-white text-center py-5">
+        <h1>Rod Hermiz</h1>
+        <p class="lead">Lead Developer at Snabby Real Estate | Expert in ReactJS | Technology Enthusiast</p>
     </header>
 
     <!-- About Section -->
-    <section class="py-5" id="about">
-        <div class="container text-center">
-            <h2>About Me</h2>
-            <p>
-                With over two decades of experience, I specialize in developing scalable web and console applications using Microsoft technologies such as .NET, C#, and SQL Server. I'm passionate about investing, tech innovation, and learning new frameworks. Currently, I am the lead developer at Snabby Real Estate.
-            </p>
-        </div>
+    <section id="about" class="container py-5">
+        <h2>About Me</h2>
+        <p>
+            I'm Rod Hermiz, a Senior Full Stack Developer at Snabby Real Estate with over 19 years of experience. 
+            I specialize in .NET, various RDBMSs, and ReactJS. I enjoy leading development teams, implementing elegant solutions, and learning new technologies to stay ahead of the curve.
+        </p>
     </section>
 
-    <!-- Portfolio Section -->
-    <section class="py-5 bg-light" id="portfolio">
-        <div class="container">
-            <h2 class="text-center">Projects</h2>
-            <div class="row my-4">
-                <div class="col-md-6">
-                    <img src="project1.jpg" alt="Project 1" class="img-fluid rounded">
-                </div>
-                <div class="col-md-6">
-                    <h3>Snabby Real Estate Platform</h3>
-                    <p>
-                        Developed a user-friendly real estate platform that helps clients find their dream homes. I integrated a custom API for seamless data retrieval and developed the user experience with responsive design principles.
-                    </p>
-                </div>
+    <!-- Experience Section -->
+    <section id="experience" class="container py-5">
+        <h2>Professional Experience</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <h3>Snabby Real Estate</h3>
+                <p>Lead Developer | Sterling Heights, MI | 2020 - Present</p>
+                <ul>
+                    <li>Redesigned core architecture and optimized database response time, reducing delays by up to 80%.</li>
+                    <li>Led projects to integrate APIs for public record data and marketing automation.</li>
+                </ul>
             </div>
-            <!-- Add more portfolio items here -->
+            <div class="col-md-4">
+                <h3>Auto Loan Options</h3>
+                <p>Software Architect | Royal Oak, MI | 2012 - 2020</p>
+                <ul>
+                    <li>Designed user-friendly UI/UX interfaces that reduced customer clicks by 30%.</li>
+                    <li>Built APIs that increased affiliate accounts and streamlined the data flow.</li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <h3>Auto Web Inc</h3>
+                <p>Senior Software Developer | Troy, MI | 2006 - 2012</p>
+                <ul>
+                    <li>Implemented features and performance improvements for a financial services company, enhancing user experience and boosting sales.</li>
+                </ul>
+            </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section class="py-5" id="contact">
-        <div class="container text-center">
-            <h2>Contact Me</h2>
-            <form class="mx-auto" style="max-width: 500px;">
-                <div class="mb-3">
-                    <input type="text" class="form-control" placeholder="Your Name">
-                </div>
-                <div class="mb-3">
-                    <input type="email" class="form-control" placeholder="Your Email">
-                </div>
-                <div class="mb-3">
-                    <textarea class="form-control" rows="5" placeholder="Your Message"></textarea>
-                </div>
-                <button type="submit" class="btn btn-success">Send</button>
-            </form>
-            <p>Or connect with me on <a href="https://www.linkedin.com/">LinkedIn</a></p>
-        </div>
+    <!-- Skills Section -->
+    <section id="skills" class="container py-5">
+        <h2>Skills & Technologies</h2>
+        <ul>
+            <li>Languages: C#, PHP, Java, JavaScript, HTML, CSS, SQL</li>
+            <li>Frameworks: .NET, Entity Framework, ReactJS</li>
+            <li>Databases: MS SQL Server, MySQL, Oracle</li>
+            <li>Tools: Git, Linux, AWS, NGINX, Apache, IIS</li>
+        </ul>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-dark text-light text-center py-4">
+    <footer class="bg-dark text-white text-center py-3">
         <p>&copy; 2024 Rod Hermiz. All rights reserved.</p>
     </footer>
 
-    <!-- Bootstrap 5 JavaScript -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
-
 </html>
