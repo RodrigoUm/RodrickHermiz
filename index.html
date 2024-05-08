@@ -91,17 +91,25 @@
 
     <!-- Footer -->
     <footer class="bg-dark text-white text-center py-3">
-        <p>&copy; 2024 Rod Hermiz. All rights reserved.</p>
+        <p>&copy; <span id="cry">2024</span> Rod Hermiz. All rights reserved.</p>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script>
-        const cd = new Date();
-        let cy = cd.getFullYear();
-        let exp = cy - 1999;
+		document.addEventListener("DOMContentLoaded", (event) => {
+			const cd = new Date();
+			let cy = cd.getFullYear();
+			let exp = cy - 1999;
+
+			let ysp = document.querySelector("#exp");
+			ysp.innerHTML = exp;
+
+			let cry = document.querySelector("#cry");
+			cry.innerHTML = cy;
+		});
+
+
         
-        let ysp = document.querySelector("#exp");
-        ysp.innerHTML = exp;
         
     </script>
     
