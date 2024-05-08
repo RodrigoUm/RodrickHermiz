@@ -17,7 +17,7 @@
     <section id="about" class="container py-5">
         <h2>About Me</h2>
         <p>
-            I'm a Senior Full Stack Developer at Snabby Real Estate with over 24 years of experience. 
+            I'm a Senior Full Stack Developer at Snabby Real Estate with over <span id="exp"></span> years of experience. 
             I specialize in .NET Core, various RDBMSs, and ReactJS. I enjoy leading development teams, implementing elegant solutions, and learning new technologies to stay ahead of the curve.
         </p>
     </section>
@@ -70,7 +70,7 @@
             <li>Adruino: Enjoy building Raspberry Pi projects. Will add links to sample projects in the near future</li>
             <li>3D Printing: Mostly small projects- Toys, figurines and other random objects. Some experimentation with several turbine designs</li>
             <li>Game design and experimentation: Built a few games with Unity and Epic's Unreal Engine mostly for school and some fun projects</li>
-            <li>Investing: I dabble with algorithmic trading and real estate investing (don't ask for money)</li>
+            <li>Investing: I dabble with algorithmic trading and some financial products fascinate me</li>
         </ul>
     </section>
     
@@ -79,15 +79,13 @@
         <h2>Social Profiles</h2>
         <ul style="list-style-type:none;">
             <li>
-
-            
-        
-            <a href="https://www.linkedin.com/in/hermiz" target="_blank" title="LinkedIn Profile">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
-            <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zM3.743 5.093c.837 0 1.357-.555 1.357-1.249-.015-.708-.52-1.248-1.341-1.248-.82 0-1.356.54-1.356 1.248 0 .694.52 1.249 1.327 1.249h.013zm4.592 8.301h2.401v-4.02c0-.216.015-.432.079-.586.172-.432.563-.878 1.22-.878.859 0 1.203.663 1.203 1.634v3.85h2.401v-4.118c0-2.198-1.172-3.219-2.732-3.219-1.287 0-1.872.708-2.197 1.206v.028h-.015a5.858 5.858 0 0 1 .015-.028V6.169h-2.4c.03.7 0 7.225 0 7.225z"/>
-        </svg>
-    </a></li></ul>
-        
+                <a href="https://www.linkedin.com/in/hermiz" target="_blank" title="LinkedIn Profile">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                        <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zM3.743 5.093c.837 0 1.357-.555 1.357-1.249-.015-.708-.52-1.248-1.341-1.248-.82 0-1.356.54-1.356 1.248 0 .694.52 1.249 1.327 1.249h.013zm4.592 8.301h2.401v-4.02c0-.216.015-.432.079-.586.172-.432.563-.878 1.22-.878.859 0 1.203.663 1.203 1.634v3.85h2.401v-4.118c0-2.198-1.172-3.219-2.732-3.219-1.287 0-1.872.708-2.197 1.206v.028h-.015a5.858 5.858 0 0 1 .015-.028V6.169h-2.4c.03.7 0 7.225 0 7.225z"/>
+                    </svg>
+                </a>
+            </li>
+        </ul>
     </section>
     
 
@@ -97,6 +95,17 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script>
+        const cd = new Date();
+        let cy = cd.getFullYear();
+        let exp = cy - 1999;
+        
+        let ysp = document.querySelector("#exp");
+        ysp.innerHTML = exp;
+        
+    </script>
+    
+        
     <script type="application/ld+json"> 
         {
   "@context": "http://schema.org",
