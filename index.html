@@ -242,33 +242,111 @@
 </script>
     <script type="application/ld+json"> 
 	{
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Rod Hermiz",
-    "url": "https://rodhermiz.com",
-    "jobTitle": "Full Stack Developer",
-    "worksFor": {
-      "@type": "Organization",
-      "name": "Snabby Real Estate"
+  "@context": "http://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Sterling Heights, Michigan, United States",
+        "addressCountry": "US"
+      },
+      "alumniOf": [
+        {
+          "@type": "Organization",
+          "name": "University of Michigan",
+          "url": "https://www.umich.edu",
+          "location": "Dearborn, Michigan, United States"
+        },
+        {
+          "@type": "Organization",
+          "name": "Computer Sciences Corporation (CSC)",
+          "url": "https://www.csc.com",
+          "location": "Sterling Heights, Michigan, United States",
+          "member": {
+            "@type": "OrganizationRole",
+            "description": "Developed new features and optimized existing code for Riskmaster, a complex financial application.",
+            "startDate": "2004-04",
+            "endDate": "2006-03"
+          }
+        },
+        {
+          "@type": "Organization",
+          "name": "Ford Motor Company",
+          "url": "https://www.ford.com",
+          "location": "Dearborn, Michigan, United States",
+          "member": {
+            "@type": "OrganizationRole",
+            "description": "Led projects that integrated web applications with legacy systems.",
+            "startDate": "1999-06",
+            "endDate": "2004-03"
+          }
+        },
+        {
+          "@type": "Organization",
+          "name": "AutoWeb, Inc.",
+          "url": "https://www.autoweb.com",
+          "location": "Troy, Michigan, United States",
+          "member": {
+            "@type": "OrganizationRole",
+            "description": "Design and Implementation of software solutions from the ground up",
+            "startDate": "2006-03",
+            "endDate": "2012-07"
+          }
+        },
+        {
+          "@type": "Organization",
+          "name": "Auto Loan Options",
+          "url": "https://www.autoloanoptions.com",
+          "location": "Royal Oak, Michigan, United States",
+          "member": {
+            "@type": "OrganizationRole",
+            "startDate": "2012-07",
+            "endDate": "2020-07"
+          }
+        }
+      ],
+      "awards": [],
+      "image": {
+        "@type": "ImageObject",
+        "contentUrl": "https://static.licdn.com/aero-v1/sc/h/bgaqk7x4ntjz0wg67d8u723eb"
+      },
+      "jobTitle": "Full Stack Developer",
+      "name": "Rod Hermiz",
+      "url": "https://rodhermiz.com",
+	  "sameAs": [
+		"https://www.linkedin.com/in/hermiz",
+		"https://github.com/RodrigoUM",
+		"https://twitter.com/rmhermiz"
+	  ],
+      "memberOf": [],
+      "worksFor": [
+        {
+          "@type": "Organization",
+          "name": "Snabby Real Estate",
+          "url": "https://www.snabby.com",
+          "location": "Clawson, Michigan, United States",
+          "member": {
+            "@type": "OrganizationRole",
+            "description": "Full Stack .NET Developer",
+            "startDate": "2020-06"
+          }
+        }
+      ],
+      "knowsLanguage": [],
+      "disambiguatingDescription": "",
+      "description": "Rod Hermiz is a Full Stack Developer with over 25 years of experience in .NET, C#, and database work. His career spans various industries including real estate, automotive, finance, and IT consulting. As a seasoned Software Engineer, Rod specializes in creating robust solutions across diverse platforms, including the .NET Framework, with strong proficiency in both front-end and back-end technologies.\nRod's technical toolkit is extensive, featuring deep expertise in ReactJS, Angular, and comprehensive database management, which allows him to effectively handle complex projects from concept to deployment. Throughout his career, he has demonstrated a strong ability to adapt and thrive in dynamic environments, developing high-impact software applications for sectors such as finance and automotive. Rod is particularly proud of his work integrating cutting-edge solutions like React Native and ASP.NET Core into legacy systems, optimizing operational efficiency and user experience.\nPassionate about leveraging technology to solve real-world problems, Rod continuously seeks out new challenges that push the boundaries of what's possible in software development. His commitment to excellence and ongoing professional development is reflected in his proactive approach to learning and applying the latest technological advancements. Let's connect to explore how Rod can bring value to your organization with high-quality, scalable, and innovative software solutions.""
     },
-    "alumniOf": "Computer Sciences Corporation",
-    "sameAs": [
-				"https://www.linkedin.com/in/hermiz",
-				"https://github.com/RodrigoUM",
-				"https://www.researchgate.net/profile/Rod-Hermiz",
-				"https://twitter.com/rmhermiz"
-			  ],
-    "description": "Rod Hermiz is a Full Stack Developer with over 25 years of experience in .NET, C#, and database work. His career spans various industries including real estate, automotive, finance, and IT consulting.",
-    "workLocation": {
-      "@type": "Place",
-      "name": "Sterling Heights, MI"
-    },
-    "contactPoint": {
-      "@type": "ContactPoint",
-      "telephone": "+1-248-217-2117",
-      "contactType": "Personal"
+    {
+      "@type": "WebPage",
+      "url": "https://rodhermiz.com",
+      "reviewedBy": {
+        "@type": "Person",
+        "name": "Rod Hermiz"
+      }
     }
-  }
+  ]
+}
     </script>
 </body>
 </html>
